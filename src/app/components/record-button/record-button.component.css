@@ -1,0 +1,63 @@
+.btn-record {
+  position: relative;
+  border: solid white 2px;
+  background-color: transparent;
+  width: 5dvw;
+  height: 5dvw;
+  cursor: pointer;
+
+  .icon {
+    font-size: 3.5dvh;
+  }
+
+  &:hover {
+    opacity: 1;
+    border-radius: 50%;
+    background-color: #00a8ff !important;
+    opacity: 1;
+  }
+
+  &.focus {
+    border-radius: 50%;
+    background-color: #00a8ff !important;
+    opacity: 1;
+  }
+
+  &.disabled {
+    cursor: default !important;
+
+    .icon {
+      opacity: 0.2;
+
+      &:hover {
+        opacity: 0.2;
+      }
+    }
+  }
+
+  &.recording {
+    border-radius: 50%;
+    background-color: red !important;
+    opacity: 1;
+
+    cursor: default !important;
+    z-index: 5;
+  }
+
+  &.waiting {
+    cursor: default !important;
+  }
+
+  svg {
+    width: 2.5dvw;
+    height: 2.5dvw;
+    opacity: 0.7;
+  }
+  svg:hover {
+    opacity: 1;
+  }
+}
+.record-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

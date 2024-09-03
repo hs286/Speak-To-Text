@@ -1,0 +1,42 @@
+.bottom-bar {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: stretch;
+  /* This will stretch the middle content to take up available space *
+  /* Adjust this value to control distance from the left edge */
+  
+  height: 9dvh;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 0 0 #ebebeb;
+  /* bottom: -$topbarHeight * 2 + 20px; */
+  bottom: 7dvh;
+  font-size: 3dvh;
+}
+
+.center-cell-container {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  height: 100%;
+  width: 70%;
+}
+
+
+.ez-progress-button{
+  height: 5dvw;
+  width: 8dvw;
+  display: flex;
+  align-items: center;
+}
+
+.left-cell {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

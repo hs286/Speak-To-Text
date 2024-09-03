@@ -1,0 +1,52 @@
+.playback-bar {
+  width: 97%;
+  box-sizing: border-box;
+  padding: 3rem;
+  /* height: 2.5rem; Set the height to around 2rem */
+  background-color: white;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 0.3dvh;
+  display: flex;
+  direction: ltr;
+  align-items: center;
+  box-shadow: 0 4px 1rem rgba(0, 0, 0, 0.15); /* Add shadow here */
+  font-weight: 700;
+  gap: 1rem;
+  color: #333;
+  padding: 0.7rem;
+
+}
+.parent{
+  display: flex;
+  justify-content: center;
+}
+
+.button-background{
+  border-radius: 50%;
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #15de42;
+}
+
+.play-button {
+  background-color: transparent;
+  color: #EEEDEB;
+  border: none;
+  width: 2rem;
+  font-size: 2rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 0.3rem;
+}
+.play-button:hover{
+  cursor: pointer;
+  color: #fff;
+}

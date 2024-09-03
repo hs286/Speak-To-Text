@@ -1,0 +1,25 @@
+<!--
+        <button (click)="onNext()" [disabled]="current === total || disabled" title="Next">
+            <i class="icon ion-arrow-right-b"></i>
+        </button>
+-->
+<!-- <span class="label">{{current}}/{{total}}</span> -->
+<div class="chevron-container" *ngIf="isNext === false">
+  <div class="chevron chevron-border"></div>
+  <div class="chevron chevron-inner"></div>
+  <button (click)="onBack()">
+    <div class="chevron-text">Prev</div>
+  </button>
+</div>
+<div class="chevron-container" *ngIf="isNext === true">
+  <div class="chevron-right chevron-border"></div>
+  <div class="chevron-right chevron-right-inner"></div>
+  <button (click)="onNext()">
+    <div class="chevron-text-right">next</div>
+  </button>
+</div>
+<!--
+<button (click)="onFirst()" [disabled]="current === 1 || disabled" title="First">
+    <i class="icon ion-skip-backward"></i>
+</button>
+-->

@@ -1,0 +1,109 @@
+.chevron-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  height: 80%;
+  width: 100%;
+}
+
+.chevron-container > .chevron {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  clip-path: polygon(
+    100% 0,
+    /* top right becomes top left */ 20% 0,
+    /* top left becomes top right */ 12% 20%,
+    /* left notch top */ 0% 50%,
+    /* leftmost tip */ 12% 80%,
+    /* left notch bottom */ 20% 100%,
+    /* bottom left becomes bottom right */ 100% 100%,
+    /* bottom right becomes bottom left */ 80% 50% /* rightmost tip */
+  );
+  /* leftmost tip */
+  background-color: #015cad;
+  /* Blue color for the border */
+}
+
+.chevron-container > .chevron-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  clip-path: polygon(
+    0 0,
+    /* top left */ 80% 0,
+    /* top right */ 88% 20%,
+    /* right notch top */ 100% 50%,
+    /* rightmost tip */ 88% 80%,
+    /* right notch bottom */ 80% 100%,
+    /* bottom right */ 0 100%,
+    /* bottom left */ 20% 50% /* leftmost tip */
+  );
+  /* leftmost tip */
+  background-color: #015cad;
+  /* Blue color for the border */
+}
+
+.chevron-container > .chevron-border {
+  width: 100%;
+  height: 100%;
+}
+
+.chevron-container > .chevron-inner {
+  /* Smaller chevron to act as the inside */
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  /* White color for the inside */
+  z-index: 2;
+  left: 8%;
+}
+
+.chevron-container > .chevron-right-inner {
+  /* Smaller chevron to act as the inside */
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  /* White color for the inside */
+  z-index: 2;
+  left: 11.5%;
+}
+
+.chevron-container > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.5dvw;
+  width: 100%;
+  cursor: pointer;
+}
+
+.chevron-container > button > .chevron-text {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  color: #3c3c3c;
+  transform: translate(-50%, -50%);
+  font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+
+  text-align: center;
+  z-index: 3;
+  white-space: nowrap;
+}
+
+.chevron-container > button > .chevron-text-right {
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  color: #3c3c3c;
+  transform: translate(-50%, -50%);
+  font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 3;
+  white-space: nowrap;
+}

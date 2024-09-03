@@ -1,0 +1,23 @@
+<div class="bottom-bar">
+  <div class="left-cell"></div>
+  <div class="center-cell-container">
+    <ez-progress-button
+      [isNext]="false"
+      class="ez-progress-button"
+      class="ez-progress-button"
+      [total]="totalLessonSegments"
+      [current]="index + 1"
+      (change)="setPrev()"
+    ></ez-progress-button>
+    <ez-record-button></ez-record-button>
+    <ez-progress-button
+      [isNext]="true"
+      class="ez-progress-button"
+      class="ez-progress-button"
+      [total]="totalLessonSegments"
+      [current]="index + 1"
+      (change)="setPrev()"
+    ></ez-progress-button>
+  </div>
+  <div class="right-cell"></div>
+</div>
